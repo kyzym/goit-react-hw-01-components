@@ -6,9 +6,9 @@ import { Profile } from "components/Profile/Profile"
 import { Statistics } from "components/Statistics/Statistics"
 import { FriendList} from "./FriendList/FriendList";
 import { TransactionHistory } from "./TransactionHistory/TransactionHistory";
-
+import { Container } from "./App.styled";
 export const App = () => {
-    return <>
+    return <Container>
 <Profile
     {...user}
         />
@@ -17,7 +17,7 @@ export const App = () => {
         <FriendList friends={friends} />
         <TransactionHistory items={transactions} />
 
-</>
+</Container>
 
 };
 
