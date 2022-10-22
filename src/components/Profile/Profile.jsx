@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { Box } from 'utils/Box.styled';
-// import { theme } from 'utils/Theme.styled';
+
 import {
   AvatarImg,
   UserInfo,
@@ -19,7 +19,7 @@ export const Profile = ({
 }) => {
   return (
     <Box
-      width={'cardNormal'}
+      width={'cardM'}
       mx="auto"
       mt={4}
       pt={4}
@@ -27,13 +27,14 @@ export const Profile = ({
       borderRadius="normal"
       textAlign="center"
       overflow="hidden"
+      boxShadow="medium"
     >
-      <div className="description">
+      <>
         <AvatarImg src={avatar} alt="User avatar" />
         <UserName>{username}</UserName>
         <UserInfo>{tag}</UserInfo>
         <UserLocation>{location}</UserLocation>
-      </div>
+      </>
 
       <Box as="ul" display="flex" justifyContent="center">
         <UserStatItem>

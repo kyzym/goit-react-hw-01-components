@@ -1,19 +1,39 @@
 import PropTypes from 'prop-types';
+import { Box } from 'utils/Box.styled';
+import {
+  Percentage,
+  StatItem,
+  StatList,
+  StatName,
+  Title,
+} from './Statistics.stuled';
+// import { Box } from 'utils/Box.styled';
 
 export const Statistics = ({ title, stats }) => {
   return (
-    <section className="statistics">
-      {title && <h2 className="title">{title}</h2>}
+    <Box
+      as="section"
+      width={'cardM'}
+      mx="auto"
+      mt={4}
+      pt={4}
+      backgroundColor="light"
+      borderRadius="normal"
+      textAlign="center"
+      overflow="hidden"
+      boxShadow="medium"
+    >
+      {title && <Title>{title}</Title>}
 
-      <ul className="stat-list">
+      <StatList>
         {stats.map(({ id, label, percentage }) => (
-          <li className="item" key={id}>
-            <span className="label">{label}</span>
-            <span className="percentage">{percentage}%</span>
-          </li>
+          <StatItem key={id}>
+            <StatName>{label}</StatName>
+            <Percentage>{percentage}%</Percentage>
+          </StatItem>
         ))}
-      </ul>
-    </section>
+      </StatList>
+    </Box>
   );
 };
 

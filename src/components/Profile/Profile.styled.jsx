@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const AvatarImg = styled.img`
-  width: 100px;
+  width: 25%;
   border-radius: ${p => p.theme.radii.round};
   margin: 0 auto;
 `;

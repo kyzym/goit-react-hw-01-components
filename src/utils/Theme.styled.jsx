@@ -5,7 +5,7 @@ export const theme = {
   },
   colors: {
     accent: '#00bcd5',
-    light: '#ececec',
+    light: '#fff',
     dark: '#121212',
     grey: '#8d8e8e',
     backgroundCard: '#d7e5f8',
@@ -27,12 +27,11 @@ export const theme = {
     round: '50%',
   },
   sizes: {
-    cardSmall: '200px',
-    cardNormal: '300px',
-    cardWide: '500px',
+    cardS: '200px',
+    cardM: '300px',
+    cardL: '500px',
   },
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
-  ml: 'auto',
   shadows: {
     small: '3px 5px 9px 0px #b6b6b6',
     medium: '2px 10px 20px #b6b6b6',
