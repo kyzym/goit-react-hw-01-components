@@ -12,6 +12,7 @@ export const FriendList = ({ friends }) => {
       display="flex"
       flexDirection="column"
       boxShadow="medium"
+      gridGap={16}
     >
       {friends.map(friend => (
         <FriendListItem {...friend} key={friend.id}></FriendListItem>

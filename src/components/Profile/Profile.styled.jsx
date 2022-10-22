@@ -13,8 +13,8 @@ export const UserName = styled.p`
 
 export const UserInfo = styled.p`
   font-size: ${p => p.theme.fontSize.s};
-  color: ${p => p.theme.colors.grey};
   font-weight: ${p => p.theme.fontWeight.medium};
+  color: ${p => p.theme.colors.grey};
 `;
 
 export const UserLocation = styled(UserInfo)`

@@ -6,10 +6,7 @@ export const theme = {
   colors: {
     accent: '#00bcd5',
     light: '#fff',
-    dark: '#121212',
-    grey: '#8d8e8e',
     backgroundCard: '#d7e5f8',
-    backgroundAccent: '#c89f36',
     statusCode: {
       green: '#008000',
       red: '#ff0000',
@@ -27,7 +24,6 @@ export const theme = {
     round: '50%',
   },
   sizes: {
-    cardS: '200px',
     cardM: '300px',
     cardL: '500px',
   },

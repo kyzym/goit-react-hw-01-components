@@ -10,13 +10,6 @@ export const FriendItem = styled.li`
   box-shadow: ${p => p.theme.shadows.small};
   width: 100%;
   height: 70px;
-
-  &:nth-of-type(1n) {
-    margin-bottom: 10px;
-  }
-  &:nth-of-type(5) {
-    margin-bottom: 0px;
-  }
 `;
 
 export const Status = styled.span`
